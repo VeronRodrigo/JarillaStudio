@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body{
-    padding-bottom: 2em;
     font-family: cinematografica,Louis George Café;
     src: url(./Cinematografica-Regular-trial.ttf);
     src: url(./Louis\ George\ Cafe.ttf);
@@ -92,6 +91,7 @@ nav a:hover{
     max-width: 100%;
     height: 100%;
     border: 5px solid #1a1f1e;
+    object-fit: cover;
 }
 .imagenes {
     transition: transform 0.3s, z-index 0.3s;
@@ -106,7 +106,7 @@ nav a:hover{
 /*Las imagenes solas*/
 .imagenes{
     height: 350px;
-    width: calc(25% - 10px);
+    width: 30%;
     margin-bottom: 20px;
     box-sizing: border-box;
     padding: 0px 10px 10px 5px;  
@@ -156,19 +156,20 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 50px 50px 0px 50px;
 }
 .informacion{
     display: flex;
     flex-direction: column;
-    font-family: Louis George Café ;
-    margin: 10px 0px;
+    font-family: Louis George Café;
+    margin: 2px 0px;
 }
 .informacion h1{
-    font-size: 50px;
+    font-size: 45px;
 }
 .informacion p {
     font-size: 20px;
+    padding: 5px;
 }
 .infocont2{
     display: flex;
@@ -180,14 +181,17 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 5%;
 }
 .informacion2 h2{
     font-size: 60px;
 }
 .informacion2 p{
-    font-size: 30px;
+    font-size: 2.5rem;
 }
-
+.informacion2 li{
+    font-size: 1.8rem;
+}
 
 /* estilos formulares */
 h1{
@@ -209,7 +213,7 @@ form {
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
-  }
+}
 .parrafo{
     display: flex;
     align-items: center;
@@ -217,32 +221,38 @@ form {
     width: 300px;
     padding: 10px;
     color: white;
-    font-size: large;
+    font-size: 1.3rem;
+    font-family: Louis George Café;
 }
 
 .formulario{
-  height: 100%;
+height: 100%;
 }
 
 .formup{
-  display: flex;
-  width: 300px;
-  height: 150px;
+display: flex;
+width: 300px;
+height: 150px;
 
 }
 .fieldgrid{
     display: block;
 }
+
+.formulario label{
+    font-size: 1rem;
+    font-family: Louis George Café;
+}
 .for{
-  box-sizing: border-box;
-  flex-direction: column;
-  text-align: left;
-  vertical-align: top;
-  display: inline-block;
-  width: 50%;
-  padding: 0px 12px;
-  margin-bottom: 24px;
-  color: white;
+box-sizing: border-box;
+flex-direction: column;
+text-align: left;
+vertical-align: top;
+display: inline-block;
+width: 50%;
+padding: 0px 12px;
+margin-bottom: 24px;
+color: white;
 }
 
 .button {
