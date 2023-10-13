@@ -7,7 +7,7 @@ body{
     font-family: cinematografica,Louis George Café;
     src: url(./Cinematografica-Regular-trial.ttf);
     src: url(./Louis\ George\ Cafe.ttf);
-    background-image: url(../Image/Fondo.jpg);
+    background-image: url(../image/Fondo.jpg);
     position: relative;
     min-height: 100vh;
 }
@@ -356,6 +356,10 @@ button {
     }
 
     @media (max-width: 541px) and (max-width: 770px) {
+        .navbar{
+            align-self: baseline;
+            z-index: 1;
+        }
         .titulo h1 {
             font-size: 3em;
         }
