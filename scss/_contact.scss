@@ -1,0 +1,119 @@
+/* estilos formulares */
+.main-contact{
+    padding-bottom: 180px;
+    h1{
+        text-align: center;
+    }
+}
+/*style form*/
+.Formh1 {
+    font-size: 50px;
+}
+form {
+    background-color: #1a1f1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    /* Centrar el formulario en la página */
+    margin: 0 auto;
+    max-width: 900px;
+    /* Esquema del formulario */
+    padding: 1.5em;
+    border: 1px solid $color-principal;
+    border-radius: 1em;
+    
+    
+    .parrafo{
+        display: flex;
+        align-items: center;
+        max-width: 350px;
+        padding: 10px;
+        color: white;
+        font-family: $fuente-secundaria;
+        font-size: 1.3rem;
+    }
+    
+    
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        gap: 20px;
+    }
+    
+    
+    .formup{
+    display: flex;
+    width: 100%;
+    gap: 32px;
+    }
+    
+
+    .fieldgrid{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+
+    .formulario label{
+        font-size: 1rem;
+        font-family: $fuente-secundaria;
+        color: white;
+    }
+
+
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        input,textarea{
+            background-color: $color-principal;
+            border-radius: 6px;
+            border: none;
+            padding: 8px;
+            font-family: $fuente-secundaria;
+        }
+    }
+
+    textarea{
+            resize: none;
+        }
+
+    .button {
+        margin: 0 auto;
+        width: fit-content;
+        padding: 14px 28px;
+        border-radius: 8px;
+        background-color: #ffc91e;
+        color: black;
+        font-family: $fuente-secundaria;
+            &:hover{
+                background-color: #cca118;
+        }
+    }
+}
+
+
+
+
+@media #{map-get($media-queries, mobile)}, #{map-get($media-queries, tablet)} {
+    .navbar{
+        align-self: baseline;
+        z-index: 1;
+    }
+    Form {
+        flex-direction: column;
+    }
+    .for {
+        margin-bottom: 10px;
+        display: block;
+    }
+    .formup{
+        flex-wrap: wrap;
+        height: unset;
+    }
+}

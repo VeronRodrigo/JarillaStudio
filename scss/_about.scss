@@ -1,0 +1,124 @@
+.titulo {
+    text-align: center;
+    h1{
+        font-size: 4.5rem;
+        font-family: $fuente-secundaria;
+    }
+    h2 {
+        font-family: $fuente-secundaria;
+        font-size: 2.5rem;
+    }
+}
+
+.infocont{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1% 3% 0px 3%;
+    .informacion{
+        display: flex;
+        font-family: $fuente-secundaria;
+        p {
+            font-size: 1.9rem;
+            padding: 5px;
+            text-align: center;
+        }
+    }
+    .videoIn{
+        object-fit: contain;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+.infocont2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .informacion2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 3%;
+    }
+    h2{
+        font-size: 3rem;
+        text-align: center;
+        font-family: $fuente-secundaria;
+    }
+    p{
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: $fuente-secundaria;
+    }
+    .informacion3 {
+        font-family: $fuente-secundaria;
+        padding: auto;
+        margin: auto;
+        li{
+            font-size: 1.2rem;
+            font-family: $fuente-secundaria;
+            list-style: none;
+            margin-bottom: 3%;
+        }
+    }
+}
+
+
+@media #{map-get($media-queries, mobile)} {
+    .navbar{
+        align-self: baseline;
+        z-index: 1;
+    }
+    .titulo 
+    h1 {
+        font-size: 2.5em;
+        padding-right: 5%;
+    h2 {
+            font-size: 1em;
+            padding-right: 5%;
+        }
+    }
+    .infocont {
+        flex-direction: column;
+    }
+    .video-abo {
+        max-width: 100%;
+    }
+    .informacion2 h2{
+        font-size: 3em;
+        text-align: center;
+    }
+    .informacion2 p{
+        font-size: 1.7em;
+    }
+}
+
+
+
+@media #{map-get($media-queries, tablet)} {
+    .navbar{
+        align-self: baseline;
+        z-index: 1;
+    }
+    .titulo h1 {
+        font-size: 4.5em;
+    }
+    .titulo h2 {
+        font-size: 2em;
+    }
+    .infocont {
+        flex-direction: column;
+
+    }
+    .informacion2 h2{
+        font-size: 3em;
+        text-align: center;
+    }
+    .informacion2 p{
+        font-size: 1.7em;
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+}

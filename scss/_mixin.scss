@@ -1,0 +1,15 @@
+@mixin imagen() {
+    height: 350px;
+        width: 340px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        padding: 0px 10px 10px 5px;
+        transition: transform 0.3s, z-index 0.3s;
+        &:hover {
+            transform: scale(1.3);
+            z-index: 1;
+            img{
+                opacity: 1;
+            }
+    }
+}
