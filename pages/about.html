@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <section class="layout">
@@ -52,7 +53,7 @@
         </div>
         <section class="infocont">
             <div class="informacion">
-                <p>
+                <p class="info-p">
                     En Jarilla Estudio, nos enorgullece crear espacios que inspiran, emocionan y mejoran la calidad de vida de nuestros clientes.Con una pasión por la estética, la funcionalidad y la innovación, nuestro equipo de diseñadores de interiores se esfuerza por superar las expectativas en cada proyecto que abordamos.
                 </p>
             </div>
@@ -60,18 +61,20 @@
                 <iframe width="530" height="300px" class="video-abo" src="https://www.youtube.com/embed/RRsnZfCBXXs?si=CHPaVxMjptfKenXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen width="800px" heigth="800px"></iframe>
             </div>
         </section>
+        <hr class="separador"/>
         <section class="infocont2">
             <div class="informacion2">
-                <h2>Nuestra Filosofía de Diseño</h2>
-                <p>
+                <h2 class="h2-">Nuestra Filosofía de Diseño</h2>
+                <p class="info-p2">
                     En el corazón de nuestro enfoque de diseño se encuentra la creencia de que los espacios interiores son más que meras estructuras; son el lienzo en blanco donde se tejen historias, se expresan personalidades y se fomenta la armonía. Nos esforzamos por comprender las necesidades y aspiraciones de nuestros clientes para crear soluciones de diseño únicas que reflejen su visión y estilo de vida.
                 </p>
             </div>
+            <hr class="separador"/>
             <div class="informacion3">
-                <h2>Nuestros Servicios</h2>
-                <p>
+                <h2 class="h2-2">Nuestros Servicios</h2>
+                <p class="info-p3">
                     En Jarilla Estudio, ofrecemos una amplia gama de servicios de diseño de interiores para satisfacer las necesidades de nuestros clientes:
-                    <ul>
+                    <ul class="info-ul">
                         <li>
                             <b>Diseño Residencial</b>: Transformamos hogares en oasis de confort y belleza, equilibrando la funcionalidad con el diseño.
                         </li>
@@ -106,9 +109,22 @@
             </div>
         </div>
         <div class="redes">
-            <p><a href="https://www.instagram.com/jarilla.estudio/" target="_blank"><i class="bi bi-instagram"></i> Instagram </a></p>
+            <a href="https://www.instagram.com/jarilla.estudio/" target="_blank"><i class="bi bi-instagram"></i> Instagram </a>
+            <a href="mailto:estudiojarilla@gmail.com"><i class="bi bi-envelope"></i>estudiojarilla@gmail.com</a>
         </div>
     </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script>
+            ScrollReveal({
+                reset: false,
+                distance: '50px',
+                duration: 1500,
+                delay: 200
+
+            });
+
+            ScrollReveal().reveal('.info-p, .h2-, .h2-2', { delay: 400 });
+            ScrollReveal().reveal('.info-p2, .info-p3, .info-ul', { delay: 500 });
+        </script>
 </body>
 </html>

@@ -9,8 +9,6 @@ footer {
     display: flex;
     gap: 10px;
     justify-content: space-between;
-    position: absolute;
-    bottom: 0;
 
 
     .logofot{
@@ -35,14 +33,21 @@ footer {
     .redes{
         display: flex;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
         color: white;
     }
     
     .redes a {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-family:  Louis George Café;
         text-decoration: none;
         color: white;
+    }
+    @media #{map-get($media-queries, mobile)}, #{map-get($media-queries, tablet)} {
+        .redes {
+            font-size: .5rem;
+        }
+
     }
 }
