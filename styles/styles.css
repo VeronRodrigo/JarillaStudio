@@ -131,7 +131,9 @@ img {
     text-decoration: none;
     font-family: "Louis George Cafe";
 }
-
+.box {
+    margin-left: 50px;
+}
 .cajaAbout{
     display: flex;
     justify-content: space-between;
