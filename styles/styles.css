@@ -1,0 +1,515 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: cinematografica, Louis George Cafe;
+    src: url(./Cinematografica-Regular-trial.ttf);
+    src: url(./Louis\ George\ Cafe.ttf);
+    background-image: url(../Imagenes/Fondo.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    height: 85px;
+    width: 100%;
+    justify-content: space-between;
+    color: rgb(247, 247, 247);
+    padding: 10px 0;
+    text-align: center;
+}
+.logo{
+    display: flex;
+    padding-left: 100px;
+    padding-top: 10px;
+    gap: 2px;
+}
+.img-logo {
+    height: 60px;
+    border-radius: 50px;
+}
+
+.letras{
+    padding-right: 100px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+nav ul li {
+    margin: 0px 25px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 32px;
+    letter-spacing: 1.1px;
+}
+
+/* Hero Section */
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    overflow: hidden;
+}
+.imageninicial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Louis George Cafe";
+    padding-bottom: 60px;
+}
+
+.imagini{
+    height: 300px;
+    width: 700px;
+    margin-bottom: 20px;
+}
+
+img {
+    object-fit: fill;
+}
+.bodydiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide_div {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgeH {
+    width: 300px;
+    height: auto;
+}
+
+.imgeH {
+    width: auto;
+    height: 450px;
+}
+.slide_div img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+    max-width: 600px;
+    max-height: 70vh;
+}
+
+/* About Section */
+.about  {
+    background: rgb(254,240,217);
+    background: radial-gradient(circle, rgba(254,240,217,1) 34%, rgba(255,255,255,1) 97%);
+    padding: 70px 100px;
+    text-decoration: none;
+    font-family: "Louis George Cafe";
+}
+
+.cajaAbout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cajapelotita{
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;    
+}
+.greenball{
+    background-color: #6C8947;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+}
+.redball{
+    background-color: #EE6C2E;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+}
+.yellowball{
+    background-color: #F6C918;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+}
+.info h3{
+    font-size: 54px;
+    font-weight: bold;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+.info h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.info {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.boton-insta {
+    margin-top: 100px;
+    padding: 15px 40px;
+    background-color: #F6C918;
+    border: none;
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+    border-radius: 30px;
+    font-family: "Louis George Cafe";
+    &:hover{
+        background-color: #cca118;
+        cursor: pointer;
+    }
+}
+.imagenabout{
+    height: 650px;
+    width: 450px;
+    border-radius: 20px;
+}
+/* Process Section */
+.hero2{
+    background: rgb(254,240,217);
+    background: radial-gradient(circle, rgba(254,240,217,1) 34%, rgba(255,255,255,1) 97%);
+    padding: 0 100px;
+}
+.proceso {
+    display: flex;
+    background-image: url(/Imagenes/Fondo.jpg);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 40px 0;
+    border-radius: 25px;
+}
+.hero2 h2{
+    text-align: center;
+    font-family: "Louis George Cafe";
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.imagenPro {
+    height: 650px;
+    width: 450px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-left: 60px;
+}
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40vw;
+    padding-right: 20px;
+}
+.caja1{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.caja2{
+    display: flex;
+    padding-left: 10px;
+    padding-top: 30px;
+}
+.caja3{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+.clip{
+    width: 100%;
+    height: 100%;
+}
+.pin{
+    height: 55px;
+    width: 50px;
+    position: relative;
+    z-index: 1;
+    top: -30px;
+    left: 280px;
+}
+.step1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 15px;
+    border-radius: 10px;
+    height: 200px;
+    width: 330px;
+    background-color: #6C8947;
+}
+.postit{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    align-self: flex-end;
+}
+.postit2{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    align-self: flex-end;
+}
+.postit3{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    align-self: flex-end;
+}
+.step2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px 15px 0 15px;
+    border-radius: 10px;
+    height: 200px;
+    width: 330px;
+    background-color: #EE6C2E;
+}
+.step3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 15px;
+    border-radius: 10px;
+    height: 200px;
+    width: 330px;
+    background-color: #F6C918;
+}
+.pasosh1{
+    color: #FFFFFF;
+    font-family: "Louis George Cafe";
+    font-size: 16px;
+}
+.pasop1{
+    color: #DECFAD;
+    text-align: start;
+    font-size: 13px;
+    font-family: "Louis George Cafe";
+}
+
+.pasosh2{
+    color: #FFFFFF;
+    font-family: "Louis George Cafe";
+    font-size: 16px;
+}
+
+.pasop2{
+    color: #DECFAD;
+    text-align: start;
+    font-size: 13px;
+    font-family: "Louis George Cafe";
+}
+
+.pasosh3{
+    color: black;
+    font-family: "Louis George Cafe";
+    font-size: 16px;
+}
+
+.pasop3{
+    color: #2B3035;
+    text-align: start;
+    font-size: 13px;
+    font-family: "Louis George Cafe";
+}
+/* Services Section */
+
+.hero3{
+    background: rgb(254,240,217);
+    background: radial-gradient(circle, rgba(254,240,217,1) 34%, rgba(255,255,255,1) 97%);
+    padding: 50px 100px;
+    text-align: center;
+    font-family: "Louis George Cafe";
+    overflow: hidden;
+}
+.servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servtext{
+    padding-left: 10px;
+    margin: 40px 0;
+}
+.servtext h2{
+    font-size: 40px;
+}
+.hero3 p{
+    font-size: 18px;
+    margin-bottom: 5px;
+
+}
+.hero3 h5{
+    font-size: 20px;
+}
+.tarjetasServ{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 40px 0;
+}
+.img-serv{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+}
+.tarjServ{
+    padding: 70px 15px;
+    margin: 0 5px;
+}
+
+/* Footer Section */
+footer{
+    background: rgb(254,240,217);
+    background: radial-gradient(circle, rgba(254,240,217,1) 34%, rgba(255,255,255,1) 97%);
+}
+.con{
+    background: rgb(254,240,217);
+    background: radial-gradient(circle, rgba(254,240,217,1) 34%, rgba(255,255,255,1) 97%);
+    padding: 10px 100px 50px 100px;
+
+}
+.contact{
+    background-image: url(/Imagenes/Fondo.jpg);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.letrascont{
+    text-align: center;
+}
+.infocont{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 0 0 10px;
+}
+.FormasCont {
+    font-size: 1.7rem;
+    color: black;
+    font-family: "Louis George Cafe";
+}
+.Formo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contactito{
+    font-size: 1rem;
+    color: black;
+    font-family: "Louis George Cafe";
+}
+.minita{
+    margin-top: 50px;
+    height: 450px;
+    width: auto;
+    position: relative;
+    z-index: 1;
+    bottom: -50px;
+}
+
+/*formulario*/
+.Formh1 {
+    font-size: 42px;
+    font-family: "Louis George Cafe";
+}
+form {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .fieldgrid{
+        display: flex;
+        gap: 10px;
+    }
+
+
+    .formulario label{
+        font-size: 18px;
+        font-family: "Louis George Cafe";
+        color: black;
+    }
+
+
+    .input-container{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+        input,textarea{
+            background-color: FDFDFC;
+            border-radius: 1rem;
+            border: none;
+            padding: .7rem;
+            font-family: "Louis George Cafe";
+            appearance: none;
+        }
+        textarea{
+            width: 24.5rem;
+            height: 7rem;
+        }
+    }
+    .buttonform {
+        height: auto;
+        width: 8rem;
+        padding: 10px;
+        margin: .7rem 0;
+        border-radius: 25px;
+        background-color: #F6C918;
+        color: black;
+        font-family: "Louis George Cafe";
+        font-size: 20px;
+            &:hover{
+            background-color: #cca118;
+            cursor: pointer;
+        }
+    }
+}
+
