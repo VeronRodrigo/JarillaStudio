@@ -149,23 +149,23 @@
     <footer class="con" id="contacto">
         <div class="contact">
             <div class="infocont">
-                <form action="https://formsubmit.co/hilaroveron@gmail.com" method="POST">
+                <form action="https://formsubmit.co/hilaroveron@gmail.com" method="POST" id="form">
                     <div class="formulario">
                         <div class="formup">
                             <div class="fieldgrid">
                                 <div class="input-container">
                                     <label for="name">Nombre</label>
-                                    <input type="text" id="name" name="Nombre" placeholder="Nombre..."/>
+                                    <input type="text" id="name" name="nombre" placeholder="Nombre..."/>
                                 </div>
                                 <div class="input-container">
                                     <label for="mail">Email</label>
-                                    <input type="email" id="mail" name="mail" placeholder="Email..."/>
+                                    <input type="email" id="mail" name="email" placeholder="Email..."/>
                                 </div>
                             </div>
                         </div>
                         <div class="input-container">
                             <label for="msg">Mensaje</label>
-                            <textarea rows="7" cols="50" id="msg" name="Mensaje" placeholder="Deja tu mensaje..." style="resize: none; border: none;"></textarea>
+                            <textarea rows="7" cols="50" id="msg" name="mensaje" placeholder="Deja tu mensaje..." style="resize: none; border: none;"></textarea>
                         </div>
                         <button class="buttonform" type="submit" value="Enviar">Enviar</button>
                     </div>
@@ -190,9 +190,14 @@
     const totalSlides = slides.length;
 
     function showNextSlide() {
+
+    do{
         currentIndex = (currentIndex + 1) % totalSlides;
         document.querySelector('.slider').style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
+    } while (slides [currentIndex].querySelector('.imgeH') && window.innerWidth <= 768);
+
+        document.querySelector('.slider').style.transform = `translateX(-${currentIndex * 100}%)`;
+}
 
     setInterval(showNextSlide, 4000);
     
@@ -201,7 +206,24 @@
 
     function handleForm(event) {
         event.preventDefault();
-    }
+        let form = new FormData (event.target)
+
+        fetch("https://formsubmit.co/ajax/hilaroveron@gmail.com", {
+    method: "POST",
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+        name: form.get ("nombre"),
+        email: form.get ("email"),
+        message: form.get ("mensaje")
+    })
+})
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
+}
 </script>
 
 </html>

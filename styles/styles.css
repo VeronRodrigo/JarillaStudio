@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 body {
     font-family: cinematografica, Louis George Cafe;
@@ -11,6 +12,7 @@ body {
     background-repeat: repeat;
     background-size: auto;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 header {
@@ -512,6 +514,171 @@ form {
             background-color: #cca118;
             cursor: pointer;
         }
+    }
+}
+
+
+/* versio mobile */
+
+@media screen and (max-width: 768px) {
+    body {
+        /* background-size: cover; */
+        line-height: 1.4;
+    }
+
+    header {
+        /* flex-direction: column; */
+        align-items: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .logo {
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .letras {
+        padding-right: 0;
+        padding-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 24px;
+    }
+
+    .hero {
+        padding: 1rem;
+    }
+
+    .imageninicial {
+        padding-bottom: 30px;
+    }
+
+    .imagini {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .bodydiv {
+        height: auto;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .slider-container {
+        max-width: 100%;
+    }
+    
+    .slide_div {
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgeH{
+        display: none;
+    }   
+    .imgeV {
+        width: 100%;
+        height: auto;
+    }
+    .hero2 .imagenPro{
+        display: none;
+    }
+    .about, .hero2, .hero3 {
+        padding: 50px 20px;
+    }
+
+    .cajaAbout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagenabout {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .box {
+        margin-left: 0;
+    }
+
+    .proceso {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .imagenPro {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .steps {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .caja1, .caja2, .caja3 {
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .step1, .step2, .step3 {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .tarjetasServ {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .tarjServ {
+        padding: 30px 10px;
+        margin: 10px 0;
+    }
+
+    .con {
+        padding: 20px;
+    }
+
+    .contact {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .fieldgrid {
+        flex-direction: column;
+    }
+
+    .input-container {
+        width: 100%;
+    }
+    
+    .input-container input, .input-container textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .minita {
+        width: 100%;
+        height: auto;
     }
 }
 
