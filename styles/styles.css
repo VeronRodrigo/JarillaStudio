@@ -443,6 +443,14 @@ footer{
     color: black;
     font-family: "Louis George Cafe";
 }
+
+.contact-a{
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    margin-left: 50px;
+}
 .minita{
     margin-top: 50px;
     height: 450px;
@@ -717,6 +725,7 @@ form {
     }
 
     .minita {
+        margin-top: -10px;
         width: 100%;
         height: auto;
     }
